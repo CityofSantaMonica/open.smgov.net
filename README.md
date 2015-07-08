@@ -1,2 +1,2 @@
-# api.smgov.net
+# dev.smgov.net
 City of Santa Monica API Portal
