@@ -1,13 +1,18 @@
-<div class="panel panel-info">
+<div class="panel panel-info source-block">
   <div class="panel-heading">
-    <h2>{{ page.heading }}</h2>
+    <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.heading }}</h2>
   </div>
   <div class="panel-body">
     {{ content }}
     <p>
-      <a class="btn btn-default" href="{{ page.href }}" target="_blank" role="button">
-        {% if page.button.text %} {{ page.button.text }} {% else %} Documentation {% endif %}»
+      {% for link in page.links %}
+      <a class="btn btn-default" href="{{ link.href }}" target="_blank" role="link">
+        {% if link.icon %}
+        <span class="fi fi-fw fi-{{ link.icon }}"></span>&nbsp;
+        {% endif %}
+        {{ link.text }}
       </a>
-    </p> 
+      {% endfor %}
+    </p>
   </div>
 </div>

@@ -1,0 +1,14 @@
+{
+  "api": {
+    "icon": "cloud-download"
+  },
+  "data": {
+    "icon": "database"
+  },
+  "info": {
+    "icon": "info-circle"
+  },
+  "sdk": {
+    "icon": "github"
+  },
+}

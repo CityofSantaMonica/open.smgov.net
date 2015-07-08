@@ -1,7 +1,11 @@
 ---
-title: gtfs
+category: api
 heading: GTFS and GTFS-RT
-href: http://gtfs.bigbluebus.com
+
+links:
+  - href: http://gtfs.bigbluebus.com
+    icon: book
+    text: Documentation
 
 ---
 
