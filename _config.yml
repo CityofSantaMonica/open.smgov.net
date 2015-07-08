@@ -1,0 +1,9 @@
+collections:
+  - sources
+  
+defaults:
+  - scope: 
+      path: ""
+      type: sources
+    values:
+      layout: source-block
