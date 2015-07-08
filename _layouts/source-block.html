@@ -5,14 +5,16 @@
   <div class="panel-body">
     {{ content }}
     <p>
+      <div class="btn-group" role="group" aria-label="actions">
       {% for link in page.links %}
-      <a class="btn btn-default" href="{{ link.href }}" target="_blank" role="link">
+      <a class="btn btn-default btn-md" href="{{ link.href }}" target="_blank" role="link">
         {% if link.icon %}
         <span class="fi fi-fw fi-{{ link.icon }}"></span>&nbsp;
         {% endif %}
         {{ link.text }}
       </a>
       {% endfor %}
+      </div>
     </p>
   </div>
 </div>
