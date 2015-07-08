@@ -6,8 +6,13 @@
 
 body {
   font-family: $bodyFont;
+  font-size: $fontSize;
 }
 
 .navbar {
   margin-bottom: 0;
+}
+
+.source-block h2 {
+  margin: 0;
 }
