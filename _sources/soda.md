@@ -13,4 +13,4 @@ links:
 
 ---
 
-The most popular .NET library for the [Socrata Open Data API](http://dev.socrata.com).
+The most popular .NET library for the <a href="http://dev.socrata.com" target="_blank">Socrata Open Data API</a>.

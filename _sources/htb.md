@@ -6,6 +6,10 @@ links:
   - href: http://hackthebeach.smgov.net
     icon: globe
     text: Website
+    
+  - href: https://github.com/CityofSantaMonica/hackthebeach
+    icon: file-code-o
+    text: Source Code
 
 ---
 
