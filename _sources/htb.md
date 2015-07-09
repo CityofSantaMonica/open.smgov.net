@@ -13,4 +13,4 @@ links:
 
 ---
 
-Open Data, Open Source, and Civic Tech in Santa Monica.
+Bringing together civic-minded technologists to solve real-world challenges.

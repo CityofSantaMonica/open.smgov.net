@@ -9,7 +9,11 @@ links:
       
   - href: https://github.com/CityofSantaMonica/SODA.NET/issues
     icon: bug
-    text: Issue Tracker
+    text: Issues
+
+  - href: https://www.nuget.org/packages/CSM.SodaDotNet
+    icon: package
+    text: Nuget
 
 ---
 

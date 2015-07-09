@@ -8,7 +8,7 @@ links:
     text: Website
 
   - href: http://gtfs.bigbluebus.com/current.zip
-    icon: bus
+    icon: file-binary
     text: Current File
 
 ---

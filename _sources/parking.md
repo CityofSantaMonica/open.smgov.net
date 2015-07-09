@@ -9,7 +9,7 @@ links:
       
   - href: https://github.com/CityofSantaMonica/Orchard.ParkingData/issues
     icon: bug
-    text: Issue Tracker
+    text: Issues
 
 ---
 
