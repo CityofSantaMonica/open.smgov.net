@@ -3,7 +3,7 @@ category: info
 heading: Hack the Beach
 
 links:
-  - href: http://hackthebeach.smgov.net
+  - href: http://hackthebeach.com
     icon: globe
     text: Website
     
