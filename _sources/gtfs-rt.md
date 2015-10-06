@@ -13,4 +13,4 @@ links:
 
 ---
 
-Realtime alerts, trip updates, and vehicle positions for Santa Monica's Big Blue Bus.
+Real-time alerts, trip updates, and vehicle positions for Santa Monica's Big Blue Bus.
