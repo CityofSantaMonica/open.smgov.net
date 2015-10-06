@@ -1,3 +1,3 @@
 # open.smgov.net
 
-City of Santa Monica Developer Portal
+City of Santa Monica Open Government Portal
