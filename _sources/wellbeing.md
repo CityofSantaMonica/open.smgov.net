@@ -11,6 +11,10 @@ links:
     icon: file-binary
     text: Data file
 
+  - href: http://wellbeing.smgov.net/
+    icon: globe
+    text: Website
+
 ---
 
-Demographic data pulled from the U.S. Census FactFinder site and curated for the City of Santa Monica's Wellbeing Project.
+Demographic data pulled from the U.S. Census FactFinder and curated for the City of Santa Monica's Wellbeing Project.
