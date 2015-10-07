@@ -1,6 +1,6 @@
 ---
 category: data
-heading: OpenGov Financials
+name: OpenGov Financials
 
 links:
   - href: https://santamonicaca.opengov.com

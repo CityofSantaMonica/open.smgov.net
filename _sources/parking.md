@@ -1,6 +1,6 @@
 ---
 category: api
-heading: Parking Data
+name: Parking Data
 
 links:
   - href: https://parking.api.smgov.net

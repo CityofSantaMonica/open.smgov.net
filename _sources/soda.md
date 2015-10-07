@@ -1,6 +1,6 @@
 ---
 category: sdk
-heading: SODA.NET
+name: SODA.NET
 
 links:
   - href: http://github.com/CityofSantaMonica/SODA.NET

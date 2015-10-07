@@ -1,6 +1,6 @@
 ---
 category: data
-heading: Salary Schedules
+name: Salary Schedules
 
 links:
   - href: http://cityofsantamonica.github.io/SalarySchedules.Client/

@@ -1,6 +1,6 @@
 ---
 category: info
-heading: GitHub
+name: GitHub
 
 links:
   - href: http://github.com/CityofSantaMonica

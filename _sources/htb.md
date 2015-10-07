@@ -1,6 +1,6 @@
 ---
 category: info
-heading: Hack the Beach
+name: Hack the Beach
 
 links:
   - href: http://hackthebeach.com

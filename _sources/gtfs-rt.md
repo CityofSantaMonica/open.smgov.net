@@ -1,6 +1,6 @@
 ---
 category: api
-heading: GTFS Realtime
+name: GTFS Realtime
 
 links:
   - href: http://gtfs.bigbluebus.com/
