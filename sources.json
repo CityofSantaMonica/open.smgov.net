@@ -1,0 +1,19 @@
+---
+---
+
+[
+  {% for source in site.sources %}{
+    "name": "{{ source.name }}",
+    "category": "{{ source.category }}",
+    "links": [
+      {% for link in source.links %}
+      {
+        "text": "{{ link.text }}",
+        "href": "{{ link.href }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "content": "{{ source.content | strip_html | strip_newlines }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
