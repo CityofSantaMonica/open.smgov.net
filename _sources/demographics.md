@@ -17,4 +17,4 @@ links:
 
 ---
 
-Demographic data pulled from the U.S. Census and curated for the City of Santa Monica's Wellbeing Project.
+Demographic data pulled from the U.S. Census and curated for the Wellbeing Project.
