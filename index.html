@@ -6,8 +6,17 @@ layout: default
 
 <div class="container">
   <div class="row">
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="search">Search</label>
+        <input type="text" class="form-control" id="search" placeholder="Search..." />
+      </div>
+    </form>
+  </div>
+ 
+  <div class="row">
     {% for source in site.sources %}
-    <div class="col-xs-12 col-sm-6 col-lg-4">
+    <div class="col-xs-12 col-sm-6 col-lg-4 source-container">
       {{ source.output }}
     </div>
     {% endfor %}
