@@ -13,6 +13,13 @@ function Hilitor(id, tag)
   var matchRegex = "";
   var openLeft = false;
   var openRight = false;
+  var ignoreClass = "hilitor-ignore";
+
+  this.setIgnoreClass = function(cssClass)
+  {
+    if (cssClass)
+      ignoreClass = cssClass;
+  }
 
   this.setMatchType = function(type)
   {
@@ -59,8 +66,14 @@ function Hilitor(id, tag)
     if(skipTags.test(node.nodeName)) return;
 
     if(node.hasChildNodes()) {
-      for(var i=0; i < node.childNodes.length; i++)
-        this.hiliteWords(node.childNodes[i]);
+      for(var i=0; i < node.childNodes.length; i++) {
+        var childNode = node.childNodes[i];
+
+        if (childNode.nodeType === 1 && childNode.classList.contains(ignoreClass))
+          continue
+
+        this.hiliteWords(childNode);
+      }
     }
     if(node.nodeType == 3) { // NODE_TEXT
       if((nv = node.nodeValue) && (regs = matchRegex.exec(nv))) {
