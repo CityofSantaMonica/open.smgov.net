@@ -1,20 +1,22 @@
-<div class="panel panel-info source-block">
-  <div class="panel-heading">
-    <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.name }}</h2>
-  </div>
-  <div class="panel-body">
-    {{ content }}
-    <p>
-      <div class="btn-group" role="group" aria-label="actions">
-      {% for link in page.links %}
-      <a class="btn btn-default btn-md" href="{{ link.href }}" target="_blank" role="link">
-        {% if link.icon %}
-        <span class="fi fi-fw fi-{{ link.icon }}"></span>&nbsp;
-        {% endif %}
-        {{ link.text }}
-      </a>
-      {% endfor %}
-      </div>
-    </p>
+<div class="col-xs-12 col-sm-6 col-lg-4 source-container visible" data-category="{{ page.category }}">
+  <div class="panel panel-info source-block">
+    <div class="panel-heading">
+      <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.name }}</h2>
+    </div>
+    <div class="panel-body">
+      {{ content }}
+      <p>
+        <div class="btn-group" role="group" aria-label="actions">
+          {% for link in page.links %}
+            <a class="btn btn-default btn-md" href="{{ link.href }}" target="_blank" role="link">
+              {% if link.icon %}
+                <span class="fi fi-fw fi-{{ link.icon }}"></span>
+              {% endif %}
+              {{ link.text }}
+            </a>
+          {% endfor %}
+        </div>
+      </p>
+    </div>
   </div>
 </div>

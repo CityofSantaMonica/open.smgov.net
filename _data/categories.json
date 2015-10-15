@@ -1,14 +1,18 @@
 {
   "api": {
-    "icon": "cloud-download"
+    "icon": "cloud-download",
+    "desc": "API"
   },
   "data": {
-    "icon": "database"
+    "icon": "database",
+    "desc": "Dataset"
   },
   "info": {
-    "icon": "info-circle"
+    "icon": "info-circle",
+    "desc": "Information"
   },
   "sdk": {
-    "icon": "cogs"
+    "icon": "cogs",
+    "desc": "SDKs"
   },
 }
