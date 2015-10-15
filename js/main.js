@@ -7,6 +7,8 @@ function filterResults ($items, category, needle) {
     var searchParam = needle.toLowerCase();
     var hideResult = false;
 
+    highlighter.remove();
+
     if (searchParam.length >= 3) {
       var header = $this.find(".title").html().toLowerCase();
       var body = $this.find("p").html().toLowerCase();
@@ -18,8 +20,6 @@ function filterResults ($items, category, needle) {
         $this.attr("data-hiddensearch", true);
       }
     } else {
-      highlighter.remove();
-
       if ($this.data("hiddensearch")) {
         hideResult = false;
         $this.attr("data-hiddensearch", false);
