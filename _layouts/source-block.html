@@ -12,7 +12,10 @@ shouldn't unhide something the other filter had already hidden.
      data-hiddensearch="false">
   <div class="panel panel-info source-block">
     <div class="panel-heading">
-      <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.name }}</h2>
+      <h2>
+        <span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span>
+        <span class="title">{{ page.name }}</span>
+      </h2>
     </div>
     <div class="panel-body">
       {{ content }}

@@ -6,7 +6,7 @@ function Hilitor(id, tag)
 
   var targetNode = document.getElementById(id) || document.body;
   var hiliteTag = tag || "EM";
-  var skipTags = new RegExp("^(?:" + hiliteTag + "|SCRIPT|FORM|SPAN)$");
+  var skipTags = new RegExp("^(?:" + hiliteTag + "|SCRIPT|FORM)$");
   var colors = ["#ff6", "#a0ffff", "#9f9", "#f99", "#f6f"];
   var wordColor = [];
   var colorIdx = 0;

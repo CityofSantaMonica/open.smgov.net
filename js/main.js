@@ -8,7 +8,7 @@ function filterResults ($items, category, needle) {
     var hideResult = false;
 
     if (searchParam.length >= 3) {
-      var header = $this.find("h2").html().toLowerCase();
+      var header = $this.find(".title").html().toLowerCase();
       var body = $this.find("p").html().toLowerCase();
 
       highlighter.apply(searchParam);
