@@ -1,6 +1,6 @@
 {
   "all": {
-    "icon": "globe",
+    "icon": "grid",
     "desc": "All"
   },
   "api": {
@@ -9,14 +9,14 @@
   },
   "data": {
     "icon": "database",
-    "desc": "Dataset"
+    "desc": "Data"
   },
   "info": {
-    "icon": "info-circle",
+    "icon": "globe",
     "desc": "Information"
   },
-  "sdk": {
-    "icon": "cogs",
-    "desc": "SDKs"
-  },
+  "library": {
+    "icon": "github",
+    "desc": "Libraries"
+  }
 }
