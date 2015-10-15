@@ -1,6 +1,6 @@
 ---
 category: data
-heading: GTFS Archive
+name: GTFS Archive
 
 links:
   - href: https://github.com/CityofSantaMonica/GTFS

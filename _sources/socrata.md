@@ -1,6 +1,6 @@
 ---
 category: data
-heading: Socrata Open Data
+name: Socrata Open Data
 
 links:
   - href: https://data.smgov.net/browse

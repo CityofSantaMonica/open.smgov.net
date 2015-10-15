@@ -1,6 +1,6 @@
 ---
 category: data
-heading: Demographic Data
+name: Demographic Data
 
 links:
   - href: https://github.com/CityofSantaMonica/WellbeingDemographicData

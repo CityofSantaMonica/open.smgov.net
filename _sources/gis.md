@@ -1,6 +1,6 @@
 ---
 category: data
-heading: GIS
+name: GIS
 
 links:
   - href: http://www.smgov.net/departments/isd/gis.aspx

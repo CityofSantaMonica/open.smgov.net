@@ -1,6 +1,6 @@
 ---
 category: data
-heading: GTFS Current
+name: GTFS Current
 
 links:
   - href: http://gtfs.bigbluebus.com

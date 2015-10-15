@@ -1,20 +1,36 @@
-<div class="panel panel-info source-block">
-  <div class="panel-heading">
-    <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.heading }}</h2>
-  </div>
-  <div class="panel-body">
-    {{ content }}
-    <p>
-      <div class="btn-group" role="group" aria-label="actions">
-      {% for link in page.links %}
-      <a class="btn btn-default btn-md" href="{{ link.href }}" target="_blank" role="link">
-        {% if link.icon %}
-        <span class="fi fi-fw fi-{{ link.icon }}"></span>&nbsp;
-        {% endif %}
-        {{ link.text }}
-      </a>
-      {% endfor %}
-      </div>
-    </p>
+{% comment %}
+In order to combine two filters and allow them to work together, one filter
+shouldn't unhide something the other filter had already hidden.
+
+  - data-hiddencat: True if the element has been hidden by the category filter
+  - data-hiddensearch: True if the element has been hidden by the search filter
+{% endcomment %}
+
+<div class="col-xs-12 col-sm-6 col-lg-4 source-container"
+     data-category="{{ page.category }}"
+     data-hiddencat="false"
+     data-hiddensearch="false">
+  <div class="panel panel-info source-block">
+    <div class="panel-heading">
+      <h2>
+        <span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span>
+        <span class="title">{{ page.name }}</span>
+      </h2>
+    </div>
+    <div class="panel-body">
+      {{ content }}
+      <p>
+        <div class="btn-group" role="group" aria-label="actions">
+          {% for link in page.links %}
+            <a class="btn btn-default btn-md hilitor-ignore" href="{{ link.href }}" target="_blank" role="link">
+              {% if link.icon %}
+                <span class="fi fi-fw fi-{{ link.icon }}"></span>
+              {% endif %}
+              {{ link.text }}
+            </a>
+          {% endfor %}
+        </div>
+      </p>
+    </div>
   </div>
 </div>

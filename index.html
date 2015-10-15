@@ -6,10 +6,44 @@ layout: default
 
 <div class="container">
   <div class="row">
-    {% for source in site.sources %}
-    <div class="col-xs-12 col-sm-6 col-lg-4">
-      {{ source.output }}
+    <div class="col-xs-12">
+      <p><strong>Filter by</strong></p>
     </div>
+    <div class="col-xs-8 col-lg-3">
+      <div class="form-group">
+        <label class="sr-only" for="search">Search</label>
+        <input type="text" class="form-control" id="search" placeholder="Start typing..." />
+      </div>
+    </div>
+    <div class="col-xs-4 col-lg-3">
+      <div class="margin-bottom dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span id="categorySelection">
+            <span class="fi fi-fw fi-grid"></span> All
+          </span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          {% for category in site.data.categories %}
+            <li>
+              <a class="cat-filter" href="#{{ category[0] }}" data-category="{{ category[0] }}">
+                <span class="fi fi-fw fi-{{ category[1].icon }}"></span>
+                {{ category[1].desc }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="noResults" class="row hidden">
+    <p class="no-results">No results matched your search criteria</p>
+  </div>
+
+  <div id="open-cards" class="row">
+    {% for source in site.sources %}
+      {{ source.output }}
     {% endfor %}
   </div>
 </div>

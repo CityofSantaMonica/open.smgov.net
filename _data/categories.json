@@ -1,14 +1,22 @@
 {
+  "all": {
+    "icon": "grid",
+    "desc": "All"
+  },
   "api": {
-    "icon": "cloud-download"
+    "icon": "cloud-download",
+    "desc": "API"
   },
   "data": {
-    "icon": "database"
+    "icon": "database",
+    "desc": "Data"
   },
   "info": {
-    "icon": "info-circle"
+    "icon": "globe",
+    "desc": "Information"
   },
-  "sdk": {
-    "icon": "cogs"
-  },
+  "library": {
+    "icon": "github",
+    "desc": "Libraries"
+  }
 }
