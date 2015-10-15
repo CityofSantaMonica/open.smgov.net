@@ -43,6 +43,12 @@ function filterResults ($items, category, needle) {
       $this.removeClass("hidden");
     }
   });
+
+  if ($(".source-container:visible").length === 0) {
+    $("#noResults").removeClass("hidden");
+  } else {
+    $("#noResults").addClass("hidden");
+  }
 }
 
 $(document).ready(function () {
@@ -56,7 +62,9 @@ $(document).ready(function () {
     filterResults($sourceContainers, currentCategory, currentSearchParam);
   });
 
-  $(".cat-filter").click(function () {
+  $(".cat-filter").click(function (e) {
+    e.preventDefault();
+
     currentCategory = $(this).data("category");
 
     $("#categorySelection").html($(this).html());

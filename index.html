@@ -34,6 +34,10 @@ layout: default
     </div>
   </div>
 
+  <div id="noResults" class="row hidden">
+    <p class="no-results">No results matched your search criteria</p>
+  </div>
+
   <div id="open-cards" class="row">
     {% for source in site.sources %}
       {{ source.output }}
