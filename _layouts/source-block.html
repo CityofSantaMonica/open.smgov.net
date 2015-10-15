@@ -1,4 +1,15 @@
-<div class="col-xs-12 col-sm-6 col-lg-4 source-container visible" data-category="{{ page.category }}">
+{% comment %}
+In order to combine two filters and allow them to work together, one filter
+shouldn't unhide something the other filter had already hidden.
+
+  - data-hiddencat: True if the element has been hidden by the category filter
+  - data-hiddensearch: True if the element has been hidden by the search filter
+{% endcomment %}
+
+<div class="col-xs-12 col-sm-6 col-lg-4 source-container"
+     data-category="{{ page.category }}"
+     data-hiddencat="false"
+     data-hiddensearch="false">
   <div class="panel panel-info source-block">
     <div class="panel-heading">
       <h2><span class="fi fi-fw fi-{{ site.data.categories[page.category].icon }}"></span> {{ page.name }}</h2>

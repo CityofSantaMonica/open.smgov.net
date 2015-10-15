@@ -1,28 +1,66 @@
-$(document).ready(function () {
+function filterResults ($items, category, needle) {
   var highlighter = new Hilitor("open-cards");
-  var $sourceContainers = $(".source-container");
-  
   highlighter.setMatchType("open");
-  
-  $("#search").keyup(function () {
+
+  $items.each(function () {
     var $this = $(this);
-    var searchParam = $this.val().toLowerCase();
-    
+    var searchParam = needle.toLowerCase();
+    var hideResult = false;
+
     if (searchParam.length >= 3) {
+      var header = $this.find("h2").html().toLowerCase();
+      var body = $this.find("p").html().toLowerCase();
+
       highlighter.apply(searchParam);
-      
-      $sourceContainers.each(function () {
-        var $this = $(this);
-        var header = $this.find("h2").html().toLowerCase();
-        var body = $this.find("p").html().toLowerCase();
-        
-        if (header.indexOf(searchParam) < 0 && body.indexOf(searchParam) < 0) {
-          $this.addClass("hidden");
-        }
-      });
+
+      if (header.indexOf(searchParam) < 0 && body.indexOf(searchParam) < 0) {
+        hideResult = true;
+        $this.attr("data-hiddensearch", true);
+      }
     } else {
       highlighter.remove();
-      $sourceContainers.removeClass("hidden");
+
+      if ($this.data("hiddensearch")) {
+        hideResult = false;
+        $this.attr("data-hiddensearch", false);
+      }
     }
+
+    if (category === "all") {
+      if (hideResult) {
+        $this.attr("data-hiddencat", false);
+      }
+    }
+
+    if (category !== "all" && $this.data("category") !== category) {
+      hideResult = true;
+      $this.attr("data-hiddencat", true);
+    }
+
+    if (hideResult) {
+      $this.addClass("hidden");
+    } else {
+      $this.removeClass("hidden");
+    }
+  });
+}
+
+$(document).ready(function () {
+  var currentCategory =  "all";
+  var currentSearchParam = "";
+  var $sourceContainers = $(".source-container");
+
+  $("#search").keyup(function () {
+    currentSearchParam = $(this).val().toLowerCase();
+
+    filterResults($sourceContainers, currentCategory, currentSearchParam);
+  });
+
+  $(".cat-filter").click(function () {
+    currentCategory = $(this).data("category");
+
+    $("#categorySelection").html($(this).html());
+
+    filterResults($sourceContainers, currentCategory, currentSearchParam);
   });
 });

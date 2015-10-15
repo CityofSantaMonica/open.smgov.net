@@ -15,19 +15,25 @@ layout: default
     <div class="col-lg-3">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="categoryFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
+          <span id="categorySelection">
+            <span class="fi fi-fw fi-globe"></span> All
+          </span>
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a data-category="all"><span class="fi fi-fw fi-globe"></span> All</a></li>
           {% for category in site.data.categories %}
-            <li><a data-category="{{ category[0] }}"><span class="fi fi-fw fi-{{ category[1].icon }}"></span> {{ category[1].desc }}</a></li>
+            <li>
+              <a class="cat-filter" href="#{{ category[0] }}" data-category="{{ category[0] }}">
+                <span class="fi fi-fw fi-{{ category[1].icon }}"></span>
+                {{ category[1].desc }}
+              </a>
+            </li>
           {% endfor %}
         </ul>
       </div>
     </div>
   </div>
- 
+
   <div id="open-cards" class="row">
     {% for source in site.sources %}
       {{ source.output }}
