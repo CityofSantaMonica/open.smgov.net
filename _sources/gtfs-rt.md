@@ -4,8 +4,8 @@ name: GTFS Realtime
 
 links:
   - href: http://gtfs.bigbluebus.com/
-    icon: globe
-    text: Website
+    icon: book
+    text: Documentation
 
   - href: https://github.com/CityofSantaMonica/gtfs.bigbluebus.com
     icon: file-code-o
