@@ -51,7 +51,7 @@ function filterResults ($items, category, needle) {
   }
 }
 
-$(document).ready(function () {
+function initializeFilter () {
   var currentCategory =  "all";
   var currentSearchParam = "";
   var $sourceContainers = $(".source-container");
@@ -70,5 +70,17 @@ $(document).ready(function () {
     $("#categorySelection").html($(this).html());
 
     filterResults($sourceContainers, currentCategory, currentSearchParam);
+  });
+}
+
+$(document).ready(function () {
+  // Fetch the JSON file of sources
+  $.getJSON("sources.json", function (d) {
+      var sourceCard = Handlebars.compile($("#card-template").html());
+      var sources = sourceCard({ sources: d });
+
+      $("#open-cards").html(sources);
+
+      initializeFilter();
   });
 });
