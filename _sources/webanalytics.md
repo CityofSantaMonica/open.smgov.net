@@ -1,5 +1,5 @@
 ---
-category: information
+category: info
 name: Web Analytics
 
 links:
@@ -13,7 +13,7 @@ links:
 
   - href: https://github.com/CityofSantaMonica/analytics.smgov.net
     icon: file-code-o
-    text: Source Code
+    text: Code
 ---
 
 Website analytics for the City of Santa Monica.
