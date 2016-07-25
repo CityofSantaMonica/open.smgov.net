@@ -7,11 +7,11 @@ links:
     icon: globe
     text: Website
 
-  - href: https://github.com/CityofSantaMonica/Wellbeing-Data/tree/master/SurveyResponses
+  - href: https://github.com/CityofSantaMonica/WellbeingData/tree/master/SurveyResponses
     icon: github
     text: Repository
 
-  - href: https://github.com/CityofSantaMonica/Wellbeing-Data/blob/master/SurveyResponses/Wellbeing%20Survey%20Responses.xlsx?raw=true
+  - href: https://github.com/CityofSantaMonica/WellbeingData/blob/master/SurveyResponses/Wellbeing%20Survey%20Responses.xlsx?raw=true
     icon: file-binary
     text: Data file
 
