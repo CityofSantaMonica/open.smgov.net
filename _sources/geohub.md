@@ -8,7 +8,7 @@ links:
     text: Beta Site
 
   - href: http://beta.smgov.opendata.arcgis.com/datasets?sort_by=updated_at
-    icon: globe
+    icon: database
     text: Data Catalog
 
 ---
