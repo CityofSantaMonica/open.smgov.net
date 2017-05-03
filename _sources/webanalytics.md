@@ -16,4 +16,4 @@ links:
     text: Code
 ---
 
-Website analytics for the City of Santa Monica.
+Website analytics for many of the City of Santa Monica's web properies.
