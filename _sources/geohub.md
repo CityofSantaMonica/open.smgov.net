@@ -3,11 +3,7 @@ category: data
 name: GeoHub
 
 links:
-  - href: http://beta.smgov.opendata.arcgis.com/
-    icon: globe
-    text: Beta Site
-
-  - href: http://beta.smgov.opendata.arcgis.com/datasets?sort_by=updated_at
+  - href: http://gis-smgov.opendata.arcgis.com/datasets?sort=-updatedAt
     icon: database
     text: Data Catalog
 
