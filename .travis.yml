@@ -1,0 +1,26 @@
+sudo: false
+
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.3
+
+before_install:
+  - test $TRAVIS_PULL_REQUEST && ./.travis/pr_status pending "Waiting for website to build"
+
+script:
+  - bash .travis/build.sh
+
+after_success:
+  - test $TRAVIS_PULL_REQUEST && ./.travis/pr_deploy
+after_failure:
+  - test $TRAVIS_PULL_REQUEST && ./.travis/pr_status error "Website failed to build"
+
+env:
+  global:
+    - GITHUB_AUTH_USER=allejo
+    - GITHUB_USER=CityofSantaMonica
+    - GITHUB_REPO=open.smgov.net
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+notifications:
+  email: false
