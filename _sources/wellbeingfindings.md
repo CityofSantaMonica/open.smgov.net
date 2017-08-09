@@ -12,4 +12,4 @@ links:
     text: Repository
 ---
 
-Explore Explore the City's Wellbeing Findings data.
+Explore the City's Wellbeing Findings data.
