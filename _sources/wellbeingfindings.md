@@ -10,6 +10,10 @@ links:
   - href: https://github.com/CityofSantaMonica/wellbeing-findings
     icon: github
     text: Repository
+    
+  - href: https://github.com/CityofSantaMonica/WellbeingData/tree/master/Findings
+    icon: file-binary
+    text: Data files
 ---
 
 Explore the City's Wellbeing Findings data.
