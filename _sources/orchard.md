@@ -3,7 +3,7 @@ category: library
 name: Orchard CMS
 
 links:
-  - href: https://github.com/CityofSantaMonica?utf8=%E2%9C%93&query=Orchard
+  - href: https://github.com/CityofSantaMonica?utf8=✓&q=Orchard
     icon: github
     text: Our modules and themes
 
