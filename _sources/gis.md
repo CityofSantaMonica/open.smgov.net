@@ -3,9 +3,9 @@ category: data
 name: GIS
 
 links:
-  - href: http://www.smgov.net/departments/isd/gis.aspx
-    icon: globe
-    text: Website
+  - href: http://gis-smgov.opendata.arcgis.com/datasets?sort=-updatedAt
+    icon: database
+    text: GeoHub
 
   - href: https://github.com/CityofSantaMonica/GIS
     icon: github
@@ -13,4 +13,4 @@ links:
 
 ---
 
-GIS data in multiple formats from Santa Monica, CA for public use.
+Open Source and Esri GIS Data from the City of Santa Monica, CA.
