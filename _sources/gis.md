@@ -3,7 +3,7 @@ category: data
 name: GIS
 
 links:
-  - href: http://gis-smgov.opendata.arcgis.com/datasets?sort=-updatedAt
+  - href: https://gis-smgov.opendata.arcgis.com/
     icon: database
     text: GeoHub
 

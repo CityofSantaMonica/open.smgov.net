@@ -18,7 +18,7 @@ after_failure:
 
 env:
   global:
-    - GITHUB_AUTH_USER=allejo
+    - GITHUB_AUTH_USER=thekaveman
     - GITHUB_USER=CityofSantaMonica
     - GITHUB_REPO=open.smgov.net
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
